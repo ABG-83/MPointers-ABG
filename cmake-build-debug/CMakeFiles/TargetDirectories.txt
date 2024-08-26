@@ -1,0 +1,3 @@
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/MPointers_ABG.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/rebuild_cache.dir

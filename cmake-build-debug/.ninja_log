@@ -1,0 +1,4 @@
+# ninja log v6
+3	786	1724632239741360865	CMakeFiles/MPointers_ABG.dir/src/MPointerGC.cpp.o	217949548579b62a
+4	591	1724633815446215788	CMakeFiles/MPointers_ABG.dir/src/MPointer.cpp.o	3e1b9aa887b16b05
+3	893	1724633815445215775	CMakeFiles/MPointers_ABG.dir/src/main.cpp.o	d0cc01451110d06d
