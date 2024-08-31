@@ -1,32 +1,43 @@
-//
-// Created by aldo-bagliano on 25/08/24.
-//
-
 #ifndef MPOINTER_H
 #define MPOINTER_H
+
 #include "MPointerGC.h"
 
 template <typename T>
 class MPointer {
-private:
-    T* ptr;                // Puntero encapsulado
-    int id;                // Identificador único para el GC
-    static MPointerGC* gc; // Referencia al garbage collector
-
 public:
-    // Constructor y Destructor
-    MPointer();
-    ~MPointer();
+    MPointer() : ptr(new T()), id(MPointerGC::getInstance()->registerPointer(ptr)) {}
 
-    // Sobrecarga de operadores
-    T& operator*();   // Dereference operator
-    T* operator&();   // Address operator
-    MPointer<T>& operator=(const T& value); // Assignment operator
+    ~MPointer() {
+        if (ptr != nullptr) {
+            MPointerGC::getInstance()->deregisterPointer(id);
+            ptr = nullptr;
+        }
+    }
 
-    // Método estático para crear nuevos MPointers
-    static MPointer<T> New();
+    T& operator*() { return *ptr; }
+    T* operator->() { return ptr; }
+
+    MPointer& operator=(const T& value) {
+        *ptr = value;
+        return *this;
+    }
+
+    MPointer& operator=(const MPointer<T>& other) {
+        if (this != &other) {
+            MPointerGC::getInstance()->deregisterPointer(id);
+            ptr = other.ptr;
+            id = other.id;
+            MPointerGC::getInstance()->incrementRefCount(id);
+        }
+        return *this;
+    }
+
+    static MPointer New() { return MPointer(); }
+
+private:
+    T* ptr;
+    int id;
 };
 
-//#include "MPointer.cpp" // Incluye la implementación template
-
-#endif //MPOINTER_H
+#endif

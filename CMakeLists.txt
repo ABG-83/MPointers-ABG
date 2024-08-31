@@ -9,5 +9,5 @@ add_executable(MPointers_ABG
     include/MPointer.h
     include/MPointerGC.h
     src/main.cpp
-    src/MPointer.cpp
-    src/MPointerGC.cpp)
+        src/MPointerGC.cpp
+        include/MPointerList.h)
