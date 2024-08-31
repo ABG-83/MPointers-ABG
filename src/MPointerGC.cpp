@@ -1,7 +1,5 @@
-#include "MPointerGC.h"
-
 #include <iostream>
-#include <ostream>
+#include "MPointerGC.h"
 
 MPointerGC* MPointerGC::getInstance() {
     static MPointerGC instance;
@@ -17,41 +15,40 @@ MPointerGC::~MPointerGC() {
 int MPointerGC::registerPointer(void* ptr) {
     std::lock_guard<std::mutex> lock(mtx);
     int id = nextId++;
-    pointers[id] = std::make_pair(ptr, 1);
+    pointersList.add(id, ptr);
     return id;
 }
 
 void MPointerGC::deregisterPointer(int id) {
     std::lock_guard<std::mutex> lock(mtx);
-    if (pointers.count(id) > 0 && pointers[id].second > 0) {
-        if (--pointers[id].second == 0)
-        {
-            delete static_cast<char*>(pointers[id].first);  // se usa char* para asegurar el delete
-            std::cout <<"Puntero " << id << " eliminado por el GC" << std::endl;
-            pointers.erase(id);
-        }else {
-            std::cout << "Puntero " << id << " tiene ahora " << pointers[id].second << " referencias" << std::endl;
-
-        }
+    MPointerNode* node = pointersList.find(id);
+    if (node && --node->refCount == 0) {
+        delete static_cast<char*>(node->ptr);
+        pointersList.remove(id);
+        std::cout << "Puntero " << id << " eliminado del GC" << std::endl;
     }
 }
 
 void MPointerGC::incrementRefCount(int id) {
     std::lock_guard<std::mutex> lock(mtx);
-    if (pointers.count(id) > 0) {
-        pointers[id].second++;
+    MPointerNode* node = pointersList.find(id);
+    if (node) {
+        node->refCount++;
     }
 }
 
 void MPointerGC::collectGarbage() {
     std::lock_guard<std::mutex> lock(mtx);
-    for (auto it = pointers.begin(); it != pointers.end(); ) {
-        if (it->second.second == 0) {
-            delete static_cast<char*>(it->second.first);  // se usa char* para asegurar el delete
-            std::cout <<"puntero " << it->second.first << " recolectado por GC" << std::endl;
-            it = pointers.erase(it);
+    MPointerNode* current = pointersList.getHead();
+    while (current != nullptr) {
+        if (current->refCount == 0) {
+            MPointerNode* toDelete = current;
+            current = current->next;
+            delete static_cast<char*>(toDelete->ptr);
+            pointersList.remove(toDelete->id);
+            std::cout << "Puntero " << toDelete->id << " recolectado por el GC" << std::endl;
         } else {
-            ++it;
+            current = current->next;
         }
     }
 }

@@ -5,26 +5,44 @@ class MPointerNode {
 public:
     int id;
     void* ptr;
+    int refCount; // Nuevo atributo para el conteo de referencias
     MPointerNode* next;
+
+    MPointerNode(int id, void* ptr)
+        : id(id), ptr(ptr), refCount(1), next(nullptr) {}
 };
 
 class MPointerList {
 public:
+    MPointerNode* getHead() const
+    {
+        return head;
+    }
     MPointerList() : head(nullptr), tail(nullptr) {}
 
     ~MPointerList() {
         clear();
     }
 
-    void add(int id, void* ptr) { // Cambia el tipo a void*
-        MPointerNode* newNode = new MPointerNode{id, ptr, nullptr};
-
+    void add(int id, void* ptr) {
+        MPointerNode* newNode = new MPointerNode(id, ptr);
         if (head == nullptr) {
             head = tail = newNode;
         } else {
             tail->next = newNode;
             tail = newNode;
         }
+    }
+
+    MPointerNode* find(int id) {
+        MPointerNode* current = head;
+        while (current != nullptr) {
+            if (current->id == id) {
+                return current;
+            }
+            current = current->next;
+        }
+        return nullptr;
     }
 
     void remove(int id) {
