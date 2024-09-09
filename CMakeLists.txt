@@ -10,4 +10,7 @@ add_executable(MPointers_ABG
     include/MPointerGC.h
     src/main.cpp
         src/MPointerGC.cpp
-        include/MPointerList.h)
+        include/MPointerList.h
+        include/lista_ordenamiento.h
+        include/algoritmosOrdenamiento.h
+)

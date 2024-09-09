@@ -6,26 +6,49 @@
 template <typename T>
 class MPointer {
 public:
+    // Constructor por defecto
     MPointer() : ptr(new T()), id(MPointerGC::getInstance()->registerPointer(ptr)) {}
 
+    // Constructor con valor
+    explicit MPointer(const T& value) : ptr(new T(value)), id(MPointerGC::getInstance()->registerPointer(ptr)) {}
+
+    // Constructor de copia
+    MPointer(const MPointer<T>& other) : ptr(other.ptr), id(other.id) {
+        MPointerGC::getInstance()->incrementRefCount(id);
+    }
+
+    // Destructor
     ~MPointer() {
+        // Solo se libera la memoria si es el último puntero que hace referencia a ella
         if (ptr != nullptr) {
             MPointerGC::getInstance()->deregisterPointer(id);
+            // No se elimina ptr aquí, el recolector de basura se encargará de ello
             ptr = nullptr;
         }
     }
 
-    T& operator*() { return *ptr; }
-    T* operator->() { return ptr; }
+    // Operadores de acceso
+    T* get() const { return ptr; }
+    T& operator*() const { return *ptr; }
+    T* operator->() const { return ptr; }
 
+    // Operadores de asignación
     MPointer& operator=(const T& value) {
-        *ptr = value;
+        if (ptr != nullptr) {
+            *ptr = value;
+        }
         return *this;
     }
 
     MPointer& operator=(const MPointer<T>& other) {
         if (this != &other) {
-            MPointerGC::getInstance()->deregisterPointer(id);
+            // Primero, desregistrar y liberar el puntero actual si es el último
+            if (ptr != nullptr) {
+                MPointerGC::getInstance()->deregisterPointer(id);
+                // No eliminar ptr aquí, el recolector de basura se encarga
+            }
+
+            // Copiar los datos del otro MPointer
             ptr = other.ptr;
             id = other.id;
             MPointerGC::getInstance()->incrementRefCount(id);
@@ -33,11 +56,18 @@ public:
         return *this;
     }
 
-    static MPointer New() { return MPointer(); }
+    // Métodos estáticos para crear un nuevo MPointer
+    static MPointer New(const T& value) {
+        return MPointer(value);
+    }
+
+    static MPointer New() {
+        return MPointer(); // Usa el constructor predeterminado
+    }
 
 private:
     T* ptr;
     int id;
 };
 
-#endif
+#endif // MPOINTER_H

@@ -19,13 +19,15 @@ int MPointerGC::registerPointer(void* ptr) {
     return id;
 }
 
+
 void MPointerGC::deregisterPointer(int id) {
     std::lock_guard<std::mutex> lock(mtx);
     MPointerNode* node = pointersList.find(id);
-    if (node && --node->refCount == 0) {
-        delete static_cast<char*>(node->ptr);
-        pointersList.remove(id);
-        std::cout << "Puntero " << id << " eliminado del GC" << std::endl;
+    if (node) {
+        if (--node->refCount == 0) {
+            pointersList.remove(id); // Primero, elimina el nodo de la lista
+            //se elimina en hace en collectGarbage para evitar double free
+        }
     }
 }
 
@@ -37,6 +39,9 @@ void MPointerGC::incrementRefCount(int id) {
     }
 }
 
+
+
+
 void MPointerGC::collectGarbage() {
     std::lock_guard<std::mutex> lock(mtx);
     MPointerNode* current = pointersList.getHead();
@@ -44,14 +49,17 @@ void MPointerGC::collectGarbage() {
         if (current->refCount == 0) {
             MPointerNode* toDelete = current;
             current = current->next;
+            // Solo elimina el nodo, no el puntero
             delete static_cast<char*>(toDelete->ptr);
             pointersList.remove(toDelete->id);
+            delete toDelete; // Elimina el nodo
             std::cout << "Puntero " << toDelete->id << " recolectado por el GC" << std::endl;
         } else {
             current = current->next;
         }
     }
 }
+
 
 void MPointerGC::startGCThread() {
     stopFlag = false;
