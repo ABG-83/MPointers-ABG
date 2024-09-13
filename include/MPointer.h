@@ -17,6 +17,9 @@ public:
         MPointerGC::getInstance()->incrementRefCount(id);
     }
 
+    // Constructor para nullptr
+    MPointer(std::nullptr_t) : ptr(nullptr), id(-1) {}
+
     // Destructor
     ~MPointer() {
         // Solo se libera la memoria si es el último puntero que hace referencia a ella
@@ -55,6 +58,12 @@ public:
         }
         return *this;
     }
+
+    // Operadores de comparación
+    bool operator==(std::nullptr_t) const { return ptr == nullptr; }
+    bool operator!=(std::nullptr_t) const { return ptr != nullptr; }
+    bool operator==(const MPointer<T>& other) const { return ptr == other.ptr; }
+    bool operator!=(const MPointer<T>& other) const { return ptr != other.ptr; }
 
     // Métodos estáticos para crear un nuevo MPointer
     static MPointer New(const T& value) {

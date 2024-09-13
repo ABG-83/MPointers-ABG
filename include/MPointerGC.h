@@ -16,7 +16,6 @@ public:
     void startGCThread();
     void stopGCThread();
 
-
 private:
     MPointerGC();
     ~MPointerGC();

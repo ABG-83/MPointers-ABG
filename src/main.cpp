@@ -1,51 +1,48 @@
 #include <iostream>
-#include <vector>
-#include <algorithm> // Para std::shuffle
-#include <random>    // Para std::random_device y std::mt19937
-#include "MPointer.h"
+#include <random>
 #include "lista_ordenamiento.h"
+#include "algoritmosOrdenamiento.h"
 
 int main() {
+    // Iniciar el recolector de basura
+    MPointerGC::getInstance()->startGCThread();
+
     lista_ordenamiento<int> lista;
 
-    // Crear una lista de valores del 0 al 9
-    std::vector<int> valores;
-    for (int i = 0; i < 10; ++i) {
-        valores.push_back(i);
-    }
-
-    // hacer los valores aleatorios
+    // Generador de números aleatorios
     std::random_device rd;
-    std::mt19937 g(rd());
-    std::shuffle(valores.begin(), valores.end(), g);
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distr(0, 100);
 
-    // Insertar valores en la lista usando MPointer
-    for (int valor : valores) {
-        MPointer<int> mp = MPointer<int>::New(); // Crear un nuevo MPointer<int>
-        *mp = valor;  // Asignar el valor a cada MPointer
-        std::cout << "Insertando MPointer con valor: " << *mp << " en dirección: " << mp.get() << std::endl;
-        lista.insertar(mp); // Insertar en la lista
+    // Insertar elementos aleatorios en la lista
+    for (int i = 0; i < 50; ++i) { // Inserta 50 elementos aleatorios
+        int random_value = distr(gen);
+        lista.insertar(random_value);  // Ahora solo insertamos el valor directamente
     }
 
-    std::cout << "Lista original (desordenada):" << std::endl;
-    lista.mostrar(); // Mostrar la lista desordenada
-
-    // Probar el algoritmo BubbleSort
-    lista.bubbleSort();
-    std::cout << "Lista después de BubbleSort:" << std::endl;
+    std::cout << "Lista antes de ordenar: ";
     lista.mostrar();
 
-    // Probar el algoritmo QuickSort
-    lista.quickSort();
-    std::cout << "Lista después de QuickSort:" << std::endl;
+    // Ordenar usando bubbleSort
+    bubbleSort(lista);
+
+    std::cout << "Lista después de bubbleSort: ";
     lista.mostrar();
 
-    // Probar el algoritmo InsertionSort
-    lista.insertionSort();
-    std::cout << "Lista después de InsertionSort:" << std::endl;
+    // Ordenar usando quickSort
+    quickSort(lista);
+
+    std::cout << "Lista después de quickSort: ";
     lista.mostrar();
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(1500)); // Espera para que el GC recoja el puntero
+    // Ordenar usando insertionSort
+    insertionSort(lista);
+
+    std::cout << "Lista después de insertionSort: ";
+    lista.mostrar();
+
+    // Detener el recolector de basura
+    MPointerGC::getInstance()->stopGCThread();
 
     return 0;
 }
