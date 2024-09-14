@@ -79,6 +79,216 @@ build MPointers_ABG: CXX_EXECUTABLE_LINKER__MPointers_ABG_Debug CMakeFiles/MPoin
   TARGET_FILE = MPointers_ABG
   TARGET_PDB = MPointers_ABG.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target test_lista
+
+
+#############################################
+# Order-only phony target for test_lista
+
+build cmake_object_order_depends_target_test_lista: phony || .
+
+build CMakeFiles/test_lista.dir/Gtest/test_lista_ordenamiento.cpp.o: CXX_COMPILER__test_lista_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/Gtest/test_lista_ordenamiento.cpp || cmake_object_order_depends_target_test_lista
+  DEP_FILE = CMakeFiles/test_lista.dir/Gtest/test_lista_ordenamiento.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_lista.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_lista.dir/Gtest
+
+build CMakeFiles/test_lista.dir/src/MPointerGC.cpp.o: CXX_COMPILER__test_lista_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/src/MPointerGC.cpp || cmake_object_order_depends_target_test_lista
+  DEP_FILE = CMakeFiles/test_lista.dir/src/MPointerGC.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_lista.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_lista.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_lista
+
+
+#############################################
+# Link the executable test_lista
+
+build test_lista test_lista[1]_tests.cmake | ${cmake_ninja_workdir}test_lista[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_lista_Debug CMakeFiles/test_lista.dir/Gtest/test_lista_ordenamiento.cpp.o CMakeFiles/test_lista.dir/src/MPointerGC.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+  OBJECT_DIR = CMakeFiles/test_lista.dir
+  POST_BUILD = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=test_lista -D TEST_EXECUTABLE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_lista -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_lista_TESTS -D CTEST_FILE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_lista[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = test_lista
+  TARGET_PDB = test_lista.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_algoritmos
+
+
+#############################################
+# Order-only phony target for test_algoritmos
+
+build cmake_object_order_depends_target_test_algoritmos: phony || .
+
+build CMakeFiles/test_algoritmos.dir/Gtest/test_algoritmos_ordenamiento.cpp.o: CXX_COMPILER__test_algoritmos_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/Gtest/test_algoritmos_ordenamiento.cpp || cmake_object_order_depends_target_test_algoritmos
+  DEP_FILE = CMakeFiles/test_algoritmos.dir/Gtest/test_algoritmos_ordenamiento.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_algoritmos.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_algoritmos.dir/Gtest
+
+build CMakeFiles/test_algoritmos.dir/src/MPointerGC.cpp.o: CXX_COMPILER__test_algoritmos_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/src/MPointerGC.cpp || cmake_object_order_depends_target_test_algoritmos
+  DEP_FILE = CMakeFiles/test_algoritmos.dir/src/MPointerGC.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_algoritmos.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_algoritmos.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_algoritmos
+
+
+#############################################
+# Link the executable test_algoritmos
+
+build test_algoritmos test_algoritmos[1]_tests.cmake | ${cmake_ninja_workdir}test_algoritmos[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_algoritmos_Debug CMakeFiles/test_algoritmos.dir/Gtest/test_algoritmos_ordenamiento.cpp.o CMakeFiles/test_algoritmos.dir/src/MPointerGC.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+  OBJECT_DIR = CMakeFiles/test_algoritmos.dir
+  POST_BUILD = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=test_algoritmos -D TEST_EXECUTABLE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_algoritmos -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_algoritmos_TESTS -D CTEST_FILE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_algoritmos[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = test_algoritmos
+  TARGET_PDB = test_algoritmos.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_mpointer
+
+
+#############################################
+# Order-only phony target for test_mpointer
+
+build cmake_object_order_depends_target_test_mpointer: phony || .
+
+build CMakeFiles/test_mpointer.dir/Gtest/test_mpointer.cpp.o: CXX_COMPILER__test_mpointer_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/Gtest/test_mpointer.cpp || cmake_object_order_depends_target_test_mpointer
+  DEP_FILE = CMakeFiles/test_mpointer.dir/Gtest/test_mpointer.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_mpointer.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_mpointer.dir/Gtest
+
+build CMakeFiles/test_mpointer.dir/src/MPointerGC.cpp.o: CXX_COMPILER__test_mpointer_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/src/MPointerGC.cpp || cmake_object_order_depends_target_test_mpointer
+  DEP_FILE = CMakeFiles/test_mpointer.dir/src/MPointerGC.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_mpointer.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_mpointer.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_mpointer
+
+
+#############################################
+# Link the executable test_mpointer
+
+build test_mpointer test_mpointer[1]_tests.cmake | ${cmake_ninja_workdir}test_mpointer[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_mpointer_Debug CMakeFiles/test_mpointer.dir/Gtest/test_mpointer.cpp.o CMakeFiles/test_mpointer.dir/src/MPointerGC.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+  OBJECT_DIR = CMakeFiles/test_mpointer.dir
+  POST_BUILD = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=test_mpointer -D TEST_EXECUTABLE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_mpointer_TESTS -D CTEST_FILE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = test_mpointer
+  TARGET_PDB = test_mpointer.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_mpointer_gc
+
+
+#############################################
+# Order-only phony target for test_mpointer_gc
+
+build cmake_object_order_depends_target_test_mpointer_gc: phony || .
+
+build CMakeFiles/test_mpointer_gc.dir/Gtest/test_mpointer_gc.cpp.o: CXX_COMPILER__test_mpointer_gc_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/Gtest/test_mpointer_gc.cpp || cmake_object_order_depends_target_test_mpointer_gc
+  DEP_FILE = CMakeFiles/test_mpointer_gc.dir/Gtest/test_mpointer_gc.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_mpointer_gc.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_mpointer_gc.dir/Gtest
+
+build CMakeFiles/test_mpointer_gc.dir/src/MPointerGC.cpp.o: CXX_COMPILER__test_mpointer_gc_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/src/MPointerGC.cpp || cmake_object_order_depends_target_test_mpointer_gc
+  DEP_FILE = CMakeFiles/test_mpointer_gc.dir/src/MPointerGC.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_mpointer_gc.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_mpointer_gc.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_mpointer_gc
+
+
+#############################################
+# Link the executable test_mpointer_gc
+
+build test_mpointer_gc test_mpointer_gc[1]_tests.cmake | ${cmake_ninja_workdir}test_mpointer_gc[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_mpointer_gc_Debug CMakeFiles/test_mpointer_gc.dir/Gtest/test_mpointer_gc.cpp.o CMakeFiles/test_mpointer_gc.dir/src/MPointerGC.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+  OBJECT_DIR = CMakeFiles/test_mpointer_gc.dir
+  POST_BUILD = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=test_mpointer_gc -D TEST_EXECUTABLE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_mpointer_gc_TESTS -D CTEST_FILE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = test_mpointer_gc
+  TARGET_PDB = test_mpointer_gc.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_mpointer_list
+
+
+#############################################
+# Order-only phony target for test_mpointer_list
+
+build cmake_object_order_depends_target_test_mpointer_list: phony || .
+
+build CMakeFiles/test_mpointer_list.dir/Gtest/test_mpointer_list.cpp.o: CXX_COMPILER__test_mpointer_list_unscanned_Debug /home/aldo-bagliano/Escritorio/MPointers-ABG/Gtest/test_mpointer_list.cpp || cmake_object_order_depends_target_test_mpointer_list
+  DEP_FILE = CMakeFiles/test_mpointer_list.dir/Gtest/test_mpointer_list.cpp.o.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/home/aldo-bagliano/Escritorio/MPointers-ABG/include
+  OBJECT_DIR = CMakeFiles/test_mpointer_list.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_mpointer_list.dir/Gtest
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_mpointer_list
+
+
+#############################################
+# Link the executable test_mpointer_list
+
+build test_mpointer_list test_mpointer_list[1]_tests.cmake | ${cmake_ninja_workdir}test_mpointer_list[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_mpointer_list_Debug CMakeFiles/test_mpointer_list.dir/Gtest/test_mpointer_list.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+  OBJECT_DIR = CMakeFiles/test_mpointer_list.dir
+  POST_BUILD = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/cmake -D TEST_TARGET=test_mpointer_list -D TEST_EXECUTABLE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_mpointer_list_TESTS -D CTEST_FILE=/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = test_mpointer_list
+  TARGET_PDB = test_mpointer_list.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug && /snap/clion/292/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
 
 #############################################
 # Utility command for edit_cache
@@ -113,7 +323,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
 
-build all: phony MPointers_ABG
+build all: phony MPointers_ABG test_lista test_algoritmos test_mpointer test_mpointer_gc test_mpointer_list
 
 # =============================================================================
 # Built-in targets
@@ -122,14 +332,14 @@ build all: phony MPointers_ABG
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/aldo-bagliano/Escritorio/MPointers-ABG/CMakeLists.txt /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/aldo-bagliano/Escritorio/MPointers-ABG/CMakeLists.txt /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGTest.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTest.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/aldo-bagliano/Escritorio/MPointers-ABG/CMakeLists.txt /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /home/aldo-bagliano/Escritorio/MPointers-ABG/CMakeLists.txt /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindGTest.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/GoogleTest.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /snap/clion/292/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/GTest/GTestTargets.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

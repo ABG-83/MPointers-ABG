@@ -12,9 +12,11 @@ public:
     int registerPointer(void* ptr);
     void deregisterPointer(int id);
     void incrementRefCount(int id);
+    int getRefCount(int id);
     void collectGarbage();
     void startGCThread();
     void stopGCThread();
+
 
 private:
     MPointerGC();
@@ -30,4 +32,4 @@ private:
     int interval; // Intervalo para la recolección de basura
 };
 
-#endif
+#endif // MPOINTERGC_H

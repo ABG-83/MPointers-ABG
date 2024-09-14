@@ -25,7 +25,7 @@ void MPointerGC::deregisterPointer(int id) {
     if (node) {
         if (--node->refCount == 0) {
             pointersList.remove(id); // Primero, elimina el nodo de la lista
-            //se elimina en hace en collectGarbage para evitar double free
+            //se elimina en hace en collectGarbage para evitar el double free
         }
     }
 }
@@ -36,6 +36,15 @@ void MPointerGC::incrementRefCount(int id) {
     if (node) {
         node->refCount++;
     }
+}
+
+int MPointerGC::getRefCount(int id) {
+    std::lock_guard<std::mutex> lock(mtx);
+    MPointerNode* node = pointersList.find(id);
+    if (node) {
+        return node->refCount;
+    }
+    return 0;
 }
 
 void MPointerGC::collectGarbage() {
@@ -68,9 +77,28 @@ void MPointerGC::stopGCThread() {
     }
 }
 
+
+
 void MPointerGC::garbageCollectionThread() {
-    while (!stopFlag) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(interval));
-        collectGarbage();
+    std::cout << "Hilo de GC iniciado." << std::endl;
+    try {
+        while (!stopFlag) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+
+            if (stopFlag) {
+                std::cout << "Deteniendo hilo de GC." << std::endl;
+                break;
+            }
+
+            std::cout << "Recolectando basura..." << std::endl;
+            collectGarbage();
+        }
+    } catch (const std::exception& e) {
+        std::cerr << "Excepción en el hilo de GC: " << e.what() << std::endl;
+    } catch (...) {
+        std::cerr << "Excepción desconocida en el hilo de GC" << std::endl;
     }
+    std::cout << "Hilo de GC finalizado." << std::endl;
 }
+
+

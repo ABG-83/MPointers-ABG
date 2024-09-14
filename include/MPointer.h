@@ -25,7 +25,7 @@ public:
         // Solo se libera la memoria si es el último puntero que hace referencia a ella
         if (ptr != nullptr) {
             MPointerGC::getInstance()->deregisterPointer(id);
-            // No se elimina ptr aquí, el recolector de basura se encargará de ello
+            // No se elimina ptr aquí, el recolector de basura se encargará de eso
             ptr = nullptr;
         }
     }

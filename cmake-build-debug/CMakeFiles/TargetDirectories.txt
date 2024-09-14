@@ -1,3 +1,9 @@
 /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/MPointers_ABG.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test_lista.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test_algoritmos.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test_mpointer.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test_mpointer_gc.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test_mpointer_list.dir
+/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/test.dir
 /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/CMakeFiles/rebuild_cache.dir

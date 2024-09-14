@@ -17,7 +17,7 @@ int main() {
     // Insertar elementos aleatorios en la lista
     for (int i = 0; i < 50; ++i) { // Inserta 50 elementos aleatorios
         int random_value = distr(gen);
-        lista.insertar(random_value);  // Ahora solo insertamos el valor directamente
+        lista.insertar(random_value);  // Ahora solo se inserta le el valor directamente
     }
 
     std::cout << "Lista antes de ordenar: ";

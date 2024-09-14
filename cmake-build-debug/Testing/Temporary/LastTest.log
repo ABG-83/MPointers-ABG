@@ -1,3 +1,573 @@
-Start testing: Sep 13 13:02 CST
+Start testing: Sep 13 20:25 CST
 ----------------------------------------------------------
-End testing: Sep 13 13:02 CST
+1/21 Testing: ListaOrdenamientoTest.InsertaElemento
+1/21 Test: ListaOrdenamientoTest.InsertaElemento
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_lista" "--gtest_filter=ListaOrdenamientoTest.InsertaElemento" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"ListaOrdenamientoTest.InsertaElemento" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = ListaOrdenamientoTest.InsertaElemento
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ListaOrdenamientoTest
+[ RUN      ] ListaOrdenamientoTest.InsertaElemento
+[       OK ] ListaOrdenamientoTest.InsertaElemento (0 ms)
+[----------] 1 test from ListaOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ListaOrdenamientoTest.InsertaElemento" end time: Sep 13 20:25 CST
+"ListaOrdenamientoTest.InsertaElemento" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/21 Testing: ListaOrdenamientoTest.ListaVacia
+2/21 Test: ListaOrdenamientoTest.ListaVacia
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_lista" "--gtest_filter=ListaOrdenamientoTest.ListaVacia" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"ListaOrdenamientoTest.ListaVacia" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = ListaOrdenamientoTest.ListaVacia
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ListaOrdenamientoTest
+[ RUN      ] ListaOrdenamientoTest.ListaVacia
+[       OK ] ListaOrdenamientoTest.ListaVacia (0 ms)
+[----------] 1 test from ListaOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ListaOrdenamientoTest.ListaVacia" end time: Sep 13 20:25 CST
+"ListaOrdenamientoTest.ListaVacia" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/21 Testing: ListaOrdenamientoTest.ListaUnElemento
+3/21 Test: ListaOrdenamientoTest.ListaUnElemento
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_lista" "--gtest_filter=ListaOrdenamientoTest.ListaUnElemento" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"ListaOrdenamientoTest.ListaUnElemento" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = ListaOrdenamientoTest.ListaUnElemento
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ListaOrdenamientoTest
+[ RUN      ] ListaOrdenamientoTest.ListaUnElemento
+[       OK ] ListaOrdenamientoTest.ListaUnElemento (0 ms)
+[----------] 1 test from ListaOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ListaOrdenamientoTest.ListaUnElemento" end time: Sep 13 20:25 CST
+"ListaOrdenamientoTest.ListaUnElemento" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/21 Testing: AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente
+4/21 Test: AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_algoritmos" "--gtest_filter=AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AlgoritmosOrdenamientoTest
+[ RUN      ] AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente
+[       OK ] AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente (0 ms)
+[----------] 1 test from AlgoritmosOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente" end time: Sep 13 20:25 CST
+"AlgoritmosOrdenamientoTest.BubbleSortOrdenaCorrectamente" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/21 Testing: AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente
+5/21 Test: AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_algoritmos" "--gtest_filter=AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AlgoritmosOrdenamientoTest
+[ RUN      ] AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente
+[       OK ] AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente (0 ms)
+[----------] 1 test from AlgoritmosOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente" end time: Sep 13 20:25 CST
+"AlgoritmosOrdenamientoTest.QuickSortOrdenaCorrectamente" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/21 Testing: AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente
+6/21 Test: AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_algoritmos" "--gtest_filter=AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AlgoritmosOrdenamientoTest
+[ RUN      ] AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente
+[       OK ] AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente (0 ms)
+[----------] 1 test from AlgoritmosOrdenamientoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente" end time: Sep 13 20:25 CST
+"AlgoritmosOrdenamientoTest.InsertionSortOrdenaCorrectamente" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/21 Testing: MPointerTest.DefaultConstructor
+7/21 Test: MPointerTest.DefaultConstructor
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.DefaultConstructor" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.DefaultConstructor" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.DefaultConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.DefaultConstructor
+[       OK ] MPointerTest.DefaultConstructor (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.DefaultConstructor" end time: Sep 13 20:25 CST
+"MPointerTest.DefaultConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/21 Testing: MPointerTest.ConstructorWithValue
+8/21 Test: MPointerTest.ConstructorWithValue
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.ConstructorWithValue" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.ConstructorWithValue" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.ConstructorWithValue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.ConstructorWithValue
+[       OK ] MPointerTest.ConstructorWithValue (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.ConstructorWithValue" end time: Sep 13 20:25 CST
+"MPointerTest.ConstructorWithValue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/21 Testing: MPointerTest.CopyConstructor
+9/21 Test: MPointerTest.CopyConstructor
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.CopyConstructor" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.CopyConstructor" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.CopyConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.CopyConstructor
+[       OK ] MPointerTest.CopyConstructor (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.CopyConstructor" end time: Sep 13 20:25 CST
+"MPointerTest.CopyConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/21 Testing: MPointerTest.AssignmentOperator
+10/21 Test: MPointerTest.AssignmentOperator
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.AssignmentOperator" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.AssignmentOperator" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.AssignmentOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.AssignmentOperator
+[       OK ] MPointerTest.AssignmentOperator (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.AssignmentOperator" end time: Sep 13 20:25 CST
+"MPointerTest.AssignmentOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/21 Testing: MPointerTest.ComparisonWithNullptr
+11/21 Test: MPointerTest.ComparisonWithNullptr
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.ComparisonWithNullptr" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.ComparisonWithNullptr" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.ComparisonWithNullptr
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.ComparisonWithNullptr
+[       OK ] MPointerTest.ComparisonWithNullptr (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.ComparisonWithNullptr" end time: Sep 13 20:25 CST
+"MPointerTest.ComparisonWithNullptr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/21 Testing: MPointerTest.StaticCreate
+12/21 Test: MPointerTest.StaticCreate
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer" "--gtest_filter=MPointerTest.StaticCreate" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerTest.StaticCreate" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerTest.StaticCreate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerTest
+[ RUN      ] MPointerTest.StaticCreate
+[       OK ] MPointerTest.StaticCreate (0 ms)
+[----------] 1 test from MPointerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerTest.StaticCreate" end time: Sep 13 20:25 CST
+"MPointerTest.StaticCreate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/21 Testing: MPointerGC_Test.RegisterAndDeregisterPointer
+13/21 Test: MPointerGC_Test.RegisterAndDeregisterPointer
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc" "--gtest_filter=MPointerGC_Test.RegisterAndDeregisterPointer" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerGC_Test.RegisterAndDeregisterPointer" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerGC_Test.RegisterAndDeregisterPointer
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerGC_Test
+[ RUN      ] MPointerGC_Test.RegisterAndDeregisterPointer
+Hilo de GC iniciado.
+Hilo de GC finalizado.
+[       OK ] MPointerGC_Test.RegisterAndDeregisterPointer (0 ms)
+[----------] 1 test from MPointerGC_Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerGC_Test.RegisterAndDeregisterPointer" end time: Sep 13 20:25 CST
+"MPointerGC_Test.RegisterAndDeregisterPointer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/21 Testing: MPointerGC_Test.RefCountManagement
+14/21 Test: MPointerGC_Test.RefCountManagement
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc" "--gtest_filter=MPointerGC_Test.RefCountManagement" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerGC_Test.RefCountManagement" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerGC_Test.RefCountManagement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerGC_Test
+[ RUN      ] MPointerGC_Test.RefCountManagement
+Hilo de GC iniciado.
+Hilo de GC finalizado.
+[       OK ] MPointerGC_Test.RefCountManagement (0 ms)
+[----------] 1 test from MPointerGC_Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerGC_Test.RefCountManagement" end time: Sep 13 20:25 CST
+"MPointerGC_Test.RefCountManagement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/21 Testing: MPointerGC_Test.GarbageCollection
+15/21 Test: MPointerGC_Test.GarbageCollection
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc" "--gtest_filter=MPointerGC_Test.GarbageCollection" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerGC_Test.GarbageCollection" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerGC_Test.GarbageCollection
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerGC_Test
+[ RUN      ] MPointerGC_Test.GarbageCollection
+Hilo de GC iniciado.
+Hilo de GC finalizado.
+[       OK ] MPointerGC_Test.GarbageCollection (0 ms)
+[----------] 1 test from MPointerGC_Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerGC_Test.GarbageCollection" end time: Sep 13 20:25 CST
+"MPointerGC_Test.GarbageCollection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/21 Testing: MPointerGC_Test.GCThreadStartStop
+16/21 Test: MPointerGC_Test.GCThreadStartStop
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_gc" "--gtest_filter=MPointerGC_Test.GCThreadStartStop" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerGC_Test.GCThreadStartStop" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerGC_Test.GCThreadStartStop
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerGC_Test
+[ RUN      ] MPointerGC_Test.GCThreadStartStop
+terminate called without an active exception
+Hilo de GC iniciado.
+Hilo de GC iniciado.
+<end of output>
+Test time =   1.23 sec
+----------------------------------------------------------
+Test Failed.
+"MPointerGC_Test.GCThreadStartStop" end time: Sep 13 20:25 CST
+"MPointerGC_Test.GCThreadStartStop" time elapsed: 00:00:01
+----------------------------------------------------------
+
+17/21 Testing: MPointerListTest.AddNode
+17/21 Test: MPointerListTest.AddNode
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list" "--gtest_filter=MPointerListTest.AddNode" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerListTest.AddNode" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerListTest.AddNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerListTest
+[ RUN      ] MPointerListTest.AddNode
+[       OK ] MPointerListTest.AddNode (0 ms)
+[----------] 1 test from MPointerListTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerListTest.AddNode" end time: Sep 13 20:25 CST
+"MPointerListTest.AddNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/21 Testing: MPointerListTest.FindNode
+18/21 Test: MPointerListTest.FindNode
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list" "--gtest_filter=MPointerListTest.FindNode" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerListTest.FindNode" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerListTest.FindNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerListTest
+[ RUN      ] MPointerListTest.FindNode
+[       OK ] MPointerListTest.FindNode (0 ms)
+[----------] 1 test from MPointerListTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerListTest.FindNode" end time: Sep 13 20:25 CST
+"MPointerListTest.FindNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/21 Testing: MPointerListTest.RemoveNode
+19/21 Test: MPointerListTest.RemoveNode
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list" "--gtest_filter=MPointerListTest.RemoveNode" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerListTest.RemoveNode" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerListTest.RemoveNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerListTest
+[ RUN      ] MPointerListTest.RemoveNode
+[       OK ] MPointerListTest.RemoveNode (0 ms)
+[----------] 1 test from MPointerListTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerListTest.RemoveNode" end time: Sep 13 20:25 CST
+"MPointerListTest.RemoveNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/21 Testing: MPointerListTest.ClearList
+20/21 Test: MPointerListTest.ClearList
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list" "--gtest_filter=MPointerListTest.ClearList" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerListTest.ClearList" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerListTest.ClearList
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerListTest
+[ RUN      ] MPointerListTest.ClearList
+[       OK ] MPointerListTest.ClearList (0 ms)
+[----------] 1 test from MPointerListTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerListTest.ClearList" end time: Sep 13 20:25 CST
+"MPointerListTest.ClearList" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/21 Testing: MPointerListTest.AddMultipleNodes
+21/21 Test: MPointerListTest.AddMultipleNodes
+Command: "/home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug/test_mpointer_list" "--gtest_filter=MPointerListTest.AddMultipleNodes" "--gtest_also_run_disabled_tests"
+Directory: /home/aldo-bagliano/Escritorio/MPointers-ABG/cmake-build-debug
+"MPointerListTest.AddMultipleNodes" start time: Sep 13 20:25 CST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MPointerListTest.AddMultipleNodes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MPointerListTest
+[ RUN      ] MPointerListTest.AddMultipleNodes
+[       OK ] MPointerListTest.AddMultipleNodes (0 ms)
+[----------] 1 test from MPointerListTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MPointerListTest.AddMultipleNodes" end time: Sep 13 20:25 CST
+"MPointerListTest.AddMultipleNodes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 13 20:25 CST
